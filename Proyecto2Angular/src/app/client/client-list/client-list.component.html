@@ -1,6 +1,10 @@
 
+<div class="panel panel-default">
+    <div class="panel-heading">Panel Heading</div>
+    <div class="panel-body">
+  
 <table class="table table-bordered table-striped">
-  <thead>
+  <thead class="th">
       <tr>
           <td>Cédula</td>
           <td>Nombre</td>
@@ -10,7 +14,7 @@
           <td>Correo</td>
       </tr>
   </thead>
-  <tbody>
+  <tbody class="td">
       <tr *ngFor="let client of clients">
           <td>{{client.idClient}}</td>
           <td>{{client.clientName}}</td>
@@ -21,3 +25,5 @@
       </tr>
   </tbody>
 </table>
+</div>
+</div>

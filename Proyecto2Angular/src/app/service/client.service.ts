@@ -13,7 +13,7 @@ export class ClientService {
   constructor(private http: HttpClient) {}
 
 
- private apiUrl:"http://localhost:44370/api/client";
+ private apiUrl:"https://localhost:44337/api/client";
 
   
   public insertClient(client: Client){
@@ -21,6 +21,7 @@ export class ClientService {
   }
 
   public getAll(){
+    console.log('entro');
     return this.http.get(this.apiUrl);
   }
 }

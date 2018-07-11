@@ -6,3 +6,16 @@
 .h1Class{
     text-align: center;
 }
+
+table {
+    width: 80%;
+ }
+ th, td {
+    width: 25%;
+ }
+
+ .panel{
+     border-color: rgb(15, 121, 112);
+     width: 65%;
+     margin-top: 15px;
+ }

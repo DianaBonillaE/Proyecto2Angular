@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Client } from '../model/client.model';
+import { Router } from '@angular/router';
+import { ClientService } from '../service/client.service';
 
 @Component({
   selector: 'app-client',
@@ -7,9 +10,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ClientComponent implements OnInit {
   pestanaSeleccionada: String = "uno";
-  constructor() { }
+
+  constructor(private router: Router, private service: ClientService){
+    
+  }
 
   ngOnInit() {
+
   }
 
   cambiarPestana(value: String) {
