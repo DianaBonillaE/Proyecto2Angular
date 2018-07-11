@@ -28,6 +28,7 @@ import { WorkOrderComponent } from './work-order/work-order.component';
 import { NgSelectModule, NG_SELECT_DEFAULT_CONFIG } from '@ng-select/ng-select';
 import { ClientService } from './service/client.service';
 import { VehicleService } from './service/vehicle.service';
+import { Client } from './model/client.model';
 
 
 @NgModule({
@@ -55,10 +56,13 @@ import { VehicleService } from './service/vehicle.service';
       { path: 'product', component: ProductComponent },
       { path: 'detail-work', component: DetailWorkComponent },
       { path: 'work-order', component: WorkOrderComponent },
-      { path: 'vehicle-detail', component: VehicleDetailComponent }
+      { path: 'vehicle-detail', component: VehicleDetailComponent },
+      {path : 'client',component: ClientComponent},
+      {path: 'client-list',component:ClientListComponent},
+      {path: 'client-edit', component: ClientEditComponent}
     ])
   ],
-  providers: [{
+  providers: [ClientService,{
     provide: NG_SELECT_DEFAULT_CONFIG,
     useValue: {
       notFoundText: 'Este registro no es valido.'
